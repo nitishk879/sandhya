@@ -1,0 +1,364 @@
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+@-webkit-keyframes Circlebounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@keyframes Circlebounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.carousel-control .glyphicon-menu-left {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+}
+
+.carousel-control .glyphicon-menu-right {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+}
+
+.carousel-control .icon-next {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+}
+
+.carousel-control .icon-prev {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+}
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+  opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active.left {
+  opacity: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next.left {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-inner .prev {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+div .carousel-caption {
+  position: absolute !important;
+  top: 3rem;
+}
+
+.toggleHeading {
+  color: white;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -moz-transition: none !important;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  -moz-transition: none !important;
+}
+
+.toggleCaption {
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -moz-transition: none !important;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -moz-transition: none !important;
+}
+
+.btn-circle {
+  width: 75px;
+  height: 75px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 100%;
+  font-size: 50px;
+  color: #fff;
+  background: 0 0;
+  transition: background 0.3s ease-in-out;
+}
+
+.scroll-down {
+  border-radius: 50%;
+  animation: Circlebounce 2s infinite;
+  -webkit-animation: Circlebounce 2s infinite;
+  -moz-animation: Circlebounce 2s infinite;
+  -o-animation: Circlebounce 2s infinite;
+}
+
+.reservation-bar {
+  position: relative;
+  z-index: 2;
+}
+
+.reservation-bar select {
+  background: transparent !important;
+}
+
+.reservation-bar .fake-select::before {
+  background: #8c8962 !important;
+}
+
+#header {
+  background: linear-gradient(to bottom, #082b0b 80px, transparent 81px) !important;
+  background: -moz-linear-gradient(to bottom, #082b0b 80px, transparent 81px) !important;
+}
+
+#header .navbar-default .navbar-nav li a {
+  color: #9f9621;
+  font-weight: 600;
+}
+
+#header .navbar-default .navbar-nav li.active a {
+  color: #9f9621;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 581px) {
+  .carousel-caption {
+    top: calc(100% - 62px) !important;
+  }
+}
+
+@media screen and (min-width: 582px) and (max-width: 767px) {
+  .carousel-caption {
+    top: calc(100% - 92px) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    top: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-caption {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reservation-bar {
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.57) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .reservation-bar {
+    margin-top: -166px;
+    background: rgba(0, 0, 0, 0.57) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .reservation-bar {
+    background: rgba(0, 0, 0, 0.57) !important;
+    margin-top: -116px;
+  }
+}
+
+.about {
+  position: relative !important;
+  padding-bottom: 2.25rem;
+}
+
+.about .box {
+  position: relative;
+  width: 100%;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin-bottom: 0.75rem;
+}
+
+.about .box .box-img {
+  width: 100%;
+  max-width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+  text-align: center;
+  border: 1px solid #9f9621;
+}
+
+.about .box .box-body {
+  width: 100%;
+  max-width: 100% !important;
+  background: rgba(0, 0, 0, 0.94);
+  padding: 0.5rem 0.75rem;
+  color: white;
+  left: 0;
+  z-index: 1;
+}
+
+.about .box .box-body h2 a {
+  color: #9f9621 !important;
+}
+
+.about .box .box-body h2 a:hover {
+  text-decoration: none;
+}
+
+.about .box .box-body .btn-theme-outline {
+  background-color: transparent;
+  border-color: #082b0b;
+  color: #9f9621;
+}
+
+.about .box .box-body .btn-theme-outline:hover {
+  background-color: #082b0b;
+  border-color: #9f9621;
+}
+
+.inner-page-banner img {
+  background-position: center center;
+  background-size: 100% 480px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+}
+
+.navigation-bar {
+  background: rgba(8, 43, 11, 0.72) !important;
+  position: absolute;
+  width: 100%;
+  top: 278px;
+  z-index: 1;
+}
+
+.navigation-bar li a {
+  color: #948c1f !important;
+}
+
+.navigation-bar li a:hover,
+.navigation-bar li a:active {
+  color: #b4aa25 !important;
+}
+
+.navigation-bar li:hover a,
+.navigation-bar li:active a {
+  color: #b4aa25 !important;
+}
+
+#mainInner {
+  position: relative;
+  background: white !important;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  top: 276px;
+  z-index: 0;
+}
+
+#mainInner .about-us {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  z-index: 0;
+}
+
+#mainInner .about {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  z-index: 0;
+}
+
+#hotelInner {
+  position: relative;
+  background: white !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  z-index: 0;
+}
+

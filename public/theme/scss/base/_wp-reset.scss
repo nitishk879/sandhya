@@ -1,0 +1,365 @@
+$vertical-rhythm: 1.2em !default;
+$btn-background: #fda700 !default;
+$btn-color: #fff !default;
+
+/// #main { @extend %clearfix; }
+/// #content { float: left; width: 70%; }
+/// #sidebar { float: right; width: 25%; }
+
+.video {
+  margin: 0 0 15px;
+}
+p {
+  margin: 0 0 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='url'],
+input[type='date'] {
+  height: 40px;
+}
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='url'],
+input[type='date'],
+textarea {
+  .comment-form &,
+  .search-form &,
+  .post-password-form & {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 1px solid $light-gray;
+    padding: 6px 12px;
+    // &:hover {
+      
+    // }
+
+    &:focus {
+      border-color: $light-grayish-orange;
+      color: $light-grayish-orange;
+    }
+
+    @include placeholder {
+      color: $light-grayish-orange;
+    }
+  }
+  
+}
+
+.widget {
+  margin-bottom: 1.2em;
+  @extend %clearfix;
+  ul {
+    padding-left: 2em;
+  }
+  select {
+    min-width: 150px;
+  }
+}
+
+.comment-form {
+  label {
+    display: block;
+    padding-bottom: 4px;
+  }
+  textarea {
+    margin: 0;
+    resize: none;
+    overflow: auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 180px;
+    max-height: 180px;
+  }
+  input[type='text'] {
+    margin: 0 4px 0 0;
+    @include size(100%, 50px);
+  }
+  input[type='submit'] {
+    @include size(100%, 50px);
+    font: 500 18px/20px 'Lora', Arial, helvetica, sans-serif;
+    text-transform: uppercase;
+    display: block;
+    float: none;
+  }
+}
+
+.post-password-form {
+  label {
+    display: block;
+  }
+  input[type='password'] {
+    margin: 0 4px 0 0;
+     @include size(100%, 50px);
+  }
+}
+
+.search-form {
+  @extend %clearfix;
+  input {
+    float: left;
+    height: 50px;
+    &[type='search'] {
+      margin: 0 4px 0 0;
+      width: 150px;
+    }
+  }
+}
+
+.post-password-form {
+  p {
+    @extend %clearfix;
+  }
+  input {
+    float: left;
+    height: 50px;
+    &[type='password'] {
+      width: 150px;
+    }
+  }
+}
+
+.comment-form,
+.post-password-form,
+.search-form {
+  input[type='submit'] {
+    background: $base-color;
+    color: $white;
+    height: 50px;
+    border: none;
+    padding: 0 .5em;
+    &:hover {
+     background: $btn-background;
+    }
+  }
+}
+
+.commentlist {
+  margin: 0 0 1.2em;
+  .edit-link {
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .avatar-holder {
+    float: left;
+    @include size(90px, auto);
+    margin: 0 70px 4px 0;
+    @include media('<tablet') {
+      margin: 0 20px 4px 0;
+    }
+    img {
+      display: block;
+      @include size(100%, auto);
+    }
+  }
+  .meta {
+    text-transform: uppercase;
+    font: 400 13px/17px 'Lora', Arial, helvetica, sans-serif;
+    a {
+      color: $base-color;
+    }
+  }
+}
+
+.commentlist-item {
+  .commentlist-item {
+    padding: 0;
+    @include media(">=tablet") {
+      padding: 0 0 0 2em;
+      
+    }
+  }
+}
+
+.comment-reply-link {
+  z-index: 1;
+  min-width: 100px;
+  position: relative;
+  text-align: center;
+  padding: 4px 6px 3px;
+  color: $white;
+  background: $base-color;
+  text-transform: uppercase;
+  @include v-align(inline-block, top);
+  font: 400 15px/18px 'Roboto', Arial, helvetica, sans-serif;
+  color: $white;
+  &:before {
+    content: "";
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    position: absolute;
+    border: 1px solid $white;
+  }
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background: $pure-orange;
+  }
+}
+
+.comment,
+.commentlist-holder {
+  overflow: hidden;
+  font: 400 15px/30px 'Lora', Arial, helvetica, sans-serif;
+}
+
+.commentlist-item .commentlist-item,
+.commentlist-item + .commentlist-item {
+  padding-top: 1.2em;
+}
+
+.widget_calendar {
+  #next {
+    text-align: right;
+  }
+}
+
+.gallery-item {
+  dt {
+    float: none;
+    padding: 0;
+  }
+}
+
+.comments {
+  h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 28px;
+    span {
+      padding: 0 0 5px;
+      @include v-align(inline-block, top);
+      border-bottom: 3px double $pure-orange;
+    }
+  }
+}
+
+.navigation,
+.navigation-comments {
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: $vertical-rhythm;
+
+  .screen-reader-text {
+    position: absolute;
+    left: -99999px;
+  }
+
+  .page-numbers {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 .4em;
+    @include media('<tablet') {
+      padding:0;
+    }
+  }
+
+  .next,
+  .prev {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 50%;
+    background: $base-color;
+    color: $btn-color;
+    padding: .4em;
+    text-decoration: none;
+    @include media('<tablet') {
+      padding:.2em;
+    }
+    &:hover {
+      background: $btn-background;
+    }
+  }
+}
+
+.navigation-single{
+  @extend %clearfix;
+  margin-bottom: $vertical-rhythm;
+  .next,
+  .prev {
+    float: left;
+    vertical-align: middle;
+    max-width: 50%;
+    color: $btn-color;
+    text-decoration: none;
+    background: $base-color;
+    a {
+      color: inherit;
+      text-decoration: none;
+      padding: .4em;
+      display: block;
+      @include media('<tablet') {
+        padding:.2em;
+      }
+      &:hover {
+        background: $btn-background;
+      }
+    }
+  }
+  .next {
+    float: right;
+  }
+}
+
+.wp-caption {
+  max-width: 100%;
+  clear: both;
+  border: 1px solid #ccc;
+  padding: .4em;
+  margin-bottom: 1.2em;
+  img {
+    margin: 0;
+    vertical-align: top;
+  }
+  p {
+    margin: .4em 0 0;
+  }
+}
+
+div.aligncenter {
+  margin: 0 auto 1.2em;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 1.2em 4px 0; 
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 4px 1.2em; 
+}
+
+.mejs-container {
+  margin-bottom: 1.2em;
+}
+
+.wp-caption-text,
+.gallery,
+.alignnone,
+.gallery-caption,
+.sticky,
+.bypostauthor {
+  height: auto;
+}
+#wp-calendar {
+  width: 100%;
+}

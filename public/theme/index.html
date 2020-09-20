@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sandhya Hotel</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/colors.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+	<link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/datepicker.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" type="text/css">
+	
+	<link rel="stylesheet prefetch" href="css/jquery-ui.css" type="text/css">
+	
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header -->
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<strong class="logo"><a href="index.html"><img src="images/logo.png" alt="Hotel"></a></strong>
+						<!-- main navigation -->
+						<nav class="navbar navbar-default"> 
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span></span></button>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-left">
+								   <li></li>
+								   <li></li>
+								   <li></li>
+								   <li></li>
+									<li class="active"><a href="index.html">HOME</a></li>
+									<li><a href="aboutus.html">ABOUT US</a></li>
+									
+									
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+										<a href="#" class="dropdown-toggle disable" data-hover="dropdown">OUR HOTEL</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">SANDHYA RESORT & SPA, MANALI</a></li>
+                                            <li><a href="#">SANDHYA PALACE KULLU</a></li>
+                                            <li><a href="#">SANDHYA KASOL</a></li>
+										</ul>
+									</li>
+									<li>
+                                        <a href="contact.html">CONTACT</a>
+                                    </li>
+									<li></li>
+								   <li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								   <li></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- carousel -->
+		<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel"> 
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="description">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1><em>Sandhya Resort and Spa, Manali</em><br class="hidden-xs"> <span>Complimentary Wi-Fi at Sandhya Resort and Spa, Manali</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img src="images/slide1.jpg" alt="image description">
+				</div>
+				<div class="item">
+					<div class="description">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1><em>Hotel Sandhya Palace, Kullu</em><br class="hidden-xs"> <span>Complimentary Wi-Fi at Hotel Sandhya Palace, Kullu</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img src="images/slide3.jpg" alt="image description">
+				</div>
+				<div class="item">
+					<div class="description">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1><em>Hotel Sandhya, Kasol</em><br class="hidden-xs"> <span>Best Price Guarantee at Hotel Sandhya, Kasol</span></h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<img src="images/slide2.jpg" alt="image description">
+				</div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev"></a>
+			<a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next"></a>
+		</div>
+		<!-- reservation-bar -->
+		<div class="reservation-bar">
+			<div class="container">
+				<div class="row">
+					<form action="#">
+						<div class="col-md-6 col-sm-12">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="input-append date" id="dpd1" data-date="Check In" data-date-format="dd-mm-yyyy">
+										<input class="form-control" size="16" type="text" value="Arrive date">
+										<span class="icon-calendar"></span>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-append date" id="dpd2" data-date="Check Out" data-date-format="dd-mm-yyyy">
+										<input class="form-control" size="16" type="text" value="Departure date">
+										<span class="icon-calendar"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<div class="fake-select">
+											<select>
+												<option value="Adult" selected>Adult</option>
+												<option>Children</option>
+												<option>Option3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<div class="fake-select">
+											<select>
+												<option value="Room" selected>Room</option>
+												<option>Option2</option>
+												<option>Option3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<input type="submit" class="btn btn-default" value="check availability">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<!-- about -->
+			<section class="about container b-padding">
+				<div class="row">
+					<header class="header col-xs-12 g-padding">
+						<h1>A few words</h1>
+					</header>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 animate" data-anim-type="fadeInUp" data-anim-delay="300">
+						<div class="box">
+							<div class=""><img src="images/small-banner1.jpg" alt=""></div>
+							<h2><a href="#">Sandhya Resort and Spa, Manali</a></h2>
+							<p>Sandhya Resort & Spa, Kanyal Road, Rangri, Manali, Himachal Pradesh - 175131</p>
+						</div>
+					</div>
+					<div class="col-sm-4 animate" data-anim-type="fadeInUp" data-anim-delay="600">
+						<div class="box">
+							<div class=""><img src="images/small-banner2.jpg" alt=""></div>
+							<h2><a href="#">Sandhya Palace Kullu</a></h2>
+							<p>Sandhya Palace, Kullu VPO Shamshi- Ramshila Road, Himachal Pradesh - 175126</p>
+						</div>
+					</div>
+					<div class="col-sm-4 animate" data-anim-type="fadeInUp" data-anim-delay="900">
+						<div class="box">
+							<div class=""><img src="images/small-banner3.jpg" alt=""></div>
+							<h2><a href="#">Sandhya Kasol</a></h2>
+							<p>Sandhya, Kasol Village Kasol near Manikaran Distt. Kullu, Himachal Pradesh - 175105</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+		</main>
+		<!-- footer of the page -->
+		<div class="b-container">
+		<div class="google-map">
+				<div class="map-responsive" id="map_canvas">
+				 <img src="images/map.jpg">
+				</div>
+			</div>
+			<div class="footer-nav">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<a href="#wrapper" class="go-top">
+								<span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+							</a>
+							<strong class="logo"><a href="index.html"><img src="images/f-logo.png" alt="Hotel"></a></strong>
+							<!-- footer navigation -->
+							<nav class="f-nav"> 
+								<ul class="nav navbar-nav navbar-left">
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+									<li class="active"><a href="index.html">HOME</a></li>
+									<li><a href="aboutus.html">ABOUT US</a></li>
+									
+									
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+										<a href="#" class="dropdown-toggle disable" data-hover="dropdown">OUR HOTEL</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">SANDHYA RESORT & SPA, MANALI</a></li>
+                                            <li><a href="#">SANDHYA PALACE KULLU</a></li>
+                                            <li><a href="#">SANDHYA KASOL</a></li>
+										</ul>
+									</li>
+									<li>
+                                        <a href="contact.html">CONTACT</a>
+                                    </li>
+									<li>&nbsp;</li>
+								   <li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+									<li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								   <li>&nbsp;</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>&copy; <a href="#" class="link">Sandhya Hotel</a>. All rights reserved.</p>
+						</div>
+						<div class="col-sm-6">
+							<ul class="list-inline social-networks">
+								<li><a href="https://www.facebook.com/Sandhya-Group-Of-Hotels-Resorts-111529152340300/"><span class="icon-facebook"></span></a></li>
+								<li><a href="https://www.instagram.com/sandhyahotels/"><span class="icon-twitter"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Range Slider JavaScript -->
+	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+	<script type="text/javascript" src='js/range-slider.js'></script>
+	<!-- Same Height JavaScript -->
+	<script type="text/javascript" src='js/same-height.js'></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/animations.min.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/timber.master.min.js"></script>
+	<!-- Bootstrap Dropdown Hover JS -->
+	<script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" defer src="js/jquery.flexslider.js"></script> 
+	<script type="text/javascript" src="js/myscript.js"></script>
+</body>
+</html>

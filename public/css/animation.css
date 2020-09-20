@@ -1,0 +1,215 @@
+.carousel-control .glyphicon-menu-left,
+.carousel-control .glyphicon-menu-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    /*z-index: 5 !important;*/
+    /*display: inline-block !important;*/
+    font-size: 2em;
+}
+
+/*fade effect on carousel*/
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+div .carousel-caption {
+    position: absolute !important;
+    top: calc(100% - 222px);
+}
+@media screen and(max-width: 581px){
+    .carousel-caption{
+        top: calc(100% - 62px)!important;
+    }
+}
+@media screen and(min-width: 582px) and(max-width: 767px){
+    .carousel-caption{
+        top: calc(100% - 92px)!important;
+    }
+}
+@media screen and(min-width: 768px) and(max-width: 991px){
+    .carousel-caption{
+        top: 60px;
+    }
+}
+@media screen and(min-width: 992px){
+    .carousel-caption{
+        top: 60%;
+    }
+}
+
+/* Caption animation delays */
+.toggleHeading {
+    color: white;
+/ / rgb(182, 134, 47);
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -moz-transition: none !important;
+}
+
+.toggleCaption {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -moz-transition: none !important;
+}
+
+/* Caption animation delays */
+.toggleHeading {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -moz-transition: none !important;
+}
+
+.toggleCaption {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -moz-transition: none !important;
+}
+
+/*Scroll down - circle button*/
+.btn-circle {
+    width: 75px;
+    height: 75px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 100%;
+    font-size: 50px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+/*Animating the circle button*/
+.scroll-down {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    animation: Circlebounce 2s infinite;
+    -webkit-animation: Circlebounce 2s infinite;
+    -moz-animation: Circlebounce 2s infinite;
+    -o-animation: Circlebounce 2s infinite;
+}
+
+@-webkit-keyframes Circlebounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+    }
+}
+
+@-moz-keyframes Circlebounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+    }
+}
+
+@-o-keyframes Circlebounce {
+    0%, 20%, 50%, 80%, 100% {
+        -o-transform: translateY(0);
+    }
+    40% {
+        -o-transform: translateY(-30px);
+    }
+    60% {
+        -o-transform: translateY(-15px);
+    }
+}
+
+@keyframes Circlebounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.reservation-bar {
+    position: relative;
+    z-index: 2;
+}
+.reservation-bar .select{
+    background: transparent!important;
+}
+.reservation-bar .fake-select::before{
+    background: rgba(159, 150, 33, 99);
+}
+@media screen and (max-width: 767px){
+    .reservation-bar{
+        margin-top: 0;
+        background: rgba(8, 43, 11, .99);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .reservation-bar{
+        margin-top: -166px;
+        background: rgba(8, 43, 11, .72);
+    }
+}
+@media screen and (min-width: 992px){
+    .reservation-bar{
+        background: rgba(8, 43, 11, .72);
+        margin-top: -116px;
+    }
+}
+#header{
+    background: rgba(8, 43, 11, 99);
+}
+#header .navbar-default .navbar-nav li a,
+#header .navbar-default .navbar-nav li.active a{
+    color: rgba(159, 150, 33, 99);
+    font-weight: 600;
+}

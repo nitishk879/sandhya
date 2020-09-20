@@ -1,0 +1,223 @@
+/* header styles */
+#header {
+	height: 80px;
+	z-index: 9px;
+	@extend %clearfix;
+	position: relative;
+	background: $light-grayish;
+	position: relative;
+	@include media('<tablet') {
+		background: $light-grayish;
+		padding: 0 0 10px;
+	}
+	.navbar-toggle {
+		top: 20px;
+		right: 0;
+		display: none;
+		position: absolute;
+		@include size(40px, 35px);
+		padding: 5px;
+		@include media('<tablet') {
+			display: block;
+		}
+		&:after, &:before, span {
+			background: $white;
+			border-radius: 4px;
+			position: absolute;
+			top: 16px;
+			left: 20%;
+			right: 20%;
+			height: 3px;
+			margin-top: -2px;
+			@include transition(all 0.2s linear);
+		}
+		&:after, &:before {
+			content: "";
+			top: 10px;
+		}
+		&:after {
+			top: 22px;
+		}
+	}
+}
+
+/* top panel styles */
+.top-panel {
+	min-height: 69px;
+	overflow: hidden;
+	padding: 19px 0 15px;
+	background: $very-dark-gray;
+	@include media('<tablet') {
+		display: none;
+	}
+}
+
+/* Site  log styles */
+.logo {
+	@include size(220px, auto);
+	margin: 0 0 0 -110px;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 0;
+	@include media('<desktop') {
+		top: 60px;
+	}
+	@include media('<tablet') {
+		top: 0;
+		@include size(160px, auto);
+		margin: 0 0 0 -80px;
+	}
+	img {
+		display: block;
+		@include size(100%, auto);
+	}
+}
+
+/* main menu styles */
+.navbar-collapse {
+	@include media('<tablet') {
+		@include box-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+		@include transition(all 0.25s linear);
+		background: $white;
+		@include size(260px, 100%!important);
+		padding: 20px 0;
+		position: fixed;
+		display: block;
+		z-index: 99;
+		right: -260px;
+		top: 0;
+	}
+}
+
+.navbar-default {
+	border: 0;
+	padding: 30px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font: 500 14px/16px 'Lora', Arial, helvetica, sans-serif;
+	@include media('<widescreen') {
+		font: 500 13px/16px 'Lora', Arial, helvetica, sans-serif;
+	}
+	.navbar-nav {
+		&.navbar-left {
+			@include media('<tablet') {
+				float: none;
+			}
+		}
+		&.navbar-right {
+			@include media('<tablet') {
+				float: none;
+			}
+			li {
+				margin: 0 0 0 30px;
+				@include media('<widescreen') {
+					margin: 0 0 0 10px;
+				}
+				@include media('<tablet') {
+					margin: 5px 0;
+				}
+				&:first-child {
+					margin: 0;
+					@include media('<tablet') {
+						margin: 5px 0;
+					}
+				}
+			}
+            .dropdown-menu {
+                right: auto;
+                left: 0;
+            }
+		}
+		li {
+			margin: 0 30px 0 0;
+			padding-bottom: 20px;
+			@include media('<widescreen') {
+				margin: 0 10px 0 0;
+			}
+			@include media('<tablet') {
+				margin: 5px 0;
+			}
+			a {
+				padding: 0 5px 0;
+				position: relative;
+				color: $mine-shaft;
+				border-bottom: 1px solid transparent;
+				&:before, &:after {
+					@include square(5px);
+					border-radius: 50%;
+					position: absolute;
+					content: "";
+					bottom: -3px;
+				}
+				&:before {
+					left: 0;
+				}
+				&:after {
+					right: 0;
+				}
+				@include media('<tablet') {
+					padding: 5px 15px 5px 25px;
+				}
+			}
+			/*&:hover {
+				.dropdown-menu {
+					display: block;
+				}
+			}*/
+			&.active, &.open {
+				a {
+					color: $mine-shaft;
+					&:hover {
+						color: $mine-shaft;
+					}
+				}
+			}
+			li {
+				padding: 0 18px 0 0;
+				margin: 10px 0!important;
+				a {
+					border: 0;
+					padding: 0 0 0 18px;
+					color: $mine-shaft;
+					position: relative;
+					&:after {
+						display: none;
+					}
+					&:before {
+						left: 0;
+						top: 7px;
+						display: none;
+					}
+					&:hover {
+						background: none;
+						&:before {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	.caret {
+		@include v-align(inline-block, middle);
+		margin: 0 0 0 5px;
+	}
+	.dropdown-menu {
+		background: $light-grayish;
+		padding: 0 10px;
+		box-shadow: none;
+		min-width: inherit;
+		border: 0;
+		.caret {
+			margin: 0;
+			position: absolute;
+			right: 10px;
+			top: 9px;
+			@include media('<tablet') {
+				top: 13px;
+				border-color: transparent transparent transparent $white!important;
+			}
+		}
+	}
+}

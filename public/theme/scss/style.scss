@@ -1,0 +1,122 @@
+/*
+Theme Name: Habitus
+Author: Galliasoft
+Author URI:
+Version: 1
+Text Domain: Habitus
+Theme URI:
+*/
+
+// devices viewport width starts at:
+$breakpoints: (
+	xs-phone: 320px,
+	phone: 480px,
+	tablet: 768px,
+	desktop-min: 992px,
+	desktop: 1024px,
+	widescreen: 1200px
+);
+ 
+// keywords
+$media-expressions: (
+	'screen': 'screen',
+	'print': 'print',
+	'handheld': 'handheld',
+	'landscape': '(orientation: landscape)',
+	'portrait': '(orientation: portrait)',
+	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+@import 'vendors/include-media';
+
+@import "bootstrap-custom";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+
+@import 'base/mixins';
+@import 'base/helpers';
+
+/*  --------------------------------------
+  1. Embedded font styles
+  --------------------------------------*/
+/* custom fonts */
+@font-face {
+	/*@include fontface('PlayfairDisplayBold', PlayfairDisplayBold, 700, normal);*/
+}
+@font-face {
+	/*@include fontface('PlayfairDisplayBoldItalic', PlayfairDisplayBoldItalic, 700, italic);*/
+}
+
+/*  --------------------------------------
+  2. General reset
+  --------------------------------------*/
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body {
+	font: 400 16px/26px 'Lora', Arial, helvetica, sans-serif;
+	min-width: $base-min-width;
+	color: $base-color;
+	.active & {
+		overflow: hidden;
+	}
+}
+
+a { @include transition(all 0.5s ease); }
+a:focus { outline: none!important; }
+
+@import "base/wp-reset";
+
+@import 'layouts/header';
+@import 'layouts/main.scss';
+@import 'layouts/footer';
+
+@import "utils/icomoon";
+@import "utils/fancy";
+.carousel-caption {
+  position: static !important;
+}
+.carousel-inner .item{
+  letter-spacing: -.32em;
+  >  *{
+    letter-spacing: 0;
+  }
+}
+.news .carousel-inner .col, .testimonials-carousel  .carousel-inner .col {
+  float: none !important;
+  display: inline-block;
+  letter-spacing: 0;
+  vertical-align: bottom; 
+}
+.article {
+  letter-spacing: -.32em;
+  .col {
+    float: none !important;
+  display: inline-block;
+  letter-spacing: 0;
+  vertical-align: bottom;
+  }
+}
+.news .carousel-caption h2 {
+  font-weight: 700 !important;
+}
+
+.news .carousel-indicators {
+  left: 0 !important;
+  margin: 0 0 0 -98px;
+}
+.btn-default:hover {
+    color: #fff !important ;
+}
+@media only screen and (min-width:1025px) {
+    a[href^=tel],a[href^=skype], a[href^=sms] {
+    cursor:default;
+    pointer-events:none;
+  }
+}

@@ -1,0 +1,33 @@
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            opacity: 0;
+            -webkit-transition-property: opacity;
+            -moz-transition-property: opacity;
+            -o-transition-property: opacity;
+            transition-property: opacity;
+        }
+        .active {
+            opacity: 1;
+        }
+        .active.left {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+        .active.right {
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+        .next.left {
+            opacity: 1;
+        }
+        .prev.right {
+            opacity: 1;
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+    }
+}

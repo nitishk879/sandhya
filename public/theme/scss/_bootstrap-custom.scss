@@ -1,0 +1,79 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #f9f6f1;
+$base-color: #7e7e7e;
+$base-min-width: 320px;
+
+$white: #fff;
+$black: #000;
+$mine-shaft: #353535;
+$picton-blue: #53c2e8;
+$very-dark-gray: #181818;
+$pure-orange: #fda700;
+$very-light-gray: #dbdbdb;
+$gray: #aeaeae;
+$d-gray: #aaa8a5;
+$light-gray: #c9c9c9;
+$lighter-gray: #fbfbfb;
+$light-grayish: #f9f6f1;
+$dark-gray: #808080;
+$darker-gray: #7e7e7e;
+$light-grayish-orange: #c2a476;
+$pampas: #f4f0ec;
+$very-darker-gray: #4a4a4a;
+$grayish-orange: #d4d2ce;
+$grayish-yellow: #bbbab7;
+$grayish: #e2dfdb;
+$slightly-desaturated-orange: #c6a97e;
+
+$base-font-size: 16px;
+$base-line-height: 25px;
+
+$link-color:            $very-dark-gray;
+
+$font-size-h1:            36px;
+$font-size-h2:            22px;
+$font-size-h3:            18px;
+
+$headings-font-weight:    400;
+$headings-color:          $mine-shaft;
+
+$btn-font-weight:                700;
+
+$btn-default-color:              $light-grayish-orange;
+$btn-default-bg:                 transparent;
+$btn-default-border:             $light-grayish-orange;
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $picton-blue;
+$btn-primary-border:             $picton-blue;
+
+$btn-border-radius-base:		 5px;
+
+$navbar-height:					   auto;
+$navbar-margin-bottom:             0;
+$navbar-border-radius:             0;
+$navbar-padding-horizontal:        0;
+
+$navbar-default-color:             $white;
+$navbar-default-bg:                transparent;
+$navbar-default-border:            0;
+
+// Navbar links
+$navbar-default-link-color:                $mine-shaft;
+$navbar-default-link-hover-color:          $mine-shaft;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         $mine-shaft;
+$navbar-default-link-active-bg:            transparent;
+
+$input-bg:                       transparent;
+$input-color:                    $gray !default;
+$input-border:                   $gray !default;
+$input-border-focus:             $light-grayish-orange;
+$input-color-placeholder:        $light-grayish-orange;
+
+$breadcrumb-padding-vertical:   0 !default;
+$breadcrumb-padding-horizontal: 0 !default;
+$breadcrumb-bg:                 transparent !default;
+$breadcrumb-color:              $d-gray !default;
+$breadcrumb-active-color:       $white !default;
